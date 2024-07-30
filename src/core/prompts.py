@@ -1,6 +1,12 @@
 def get_prompt(user_answer: list) -> str:
     gemini_prompt = f'''
-        
+        Given someone who approaches problems by {user_answer[0]},
+        prefers to spend their free time {user_answer[1]},
+        handles unexpected changes by {user_answer[2]},
+        makes decisions based on {user_answer[3]},
+        and communicates with others {user_answer[4]},
+        what is their likely MBTI type? Additionally,
+        describe their personality and how they might handle various situations.
     '''
 
     return gemini_prompt
