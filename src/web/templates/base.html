@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>MBTI Predictor | {% block title %}{% endblock title %}</title>
+        <link rel="stylesheet" href="../static/css/base.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <a href="{{url_for('pages.home')}}">
+           <img src="" alt="MBTI Predictor" width="250px" height="75px" class="logo">
+        </a>
+        <a href="https://github.com/RaWseekQWERTY">
+            <img src="../static/img/github-logo.png" alt="" width="70px" height="40px" class="logo">
+         </a>
+        </nav>
+        <section>
+            <main>
+                {% block content %}
+                {% endblock content %}
+            </main>
+        </section>
+        <footer class="footer">
+            <p>&copy; 2024 MBTI Predictor. All rights reserved.</p>
+          </footer>
+        <script src="../static/js/index.js"></script>
+    </body>
+</html>
