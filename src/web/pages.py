@@ -10,3 +10,8 @@ bp = Blueprint("pages", __name__)
 def home():
     return render_template("pages/home.html")
 
+
+@bp.route("/explore", methods=['GET', 'POST'])
+def explore():
+    ques = questions()
+    return render_template("pages/explore.html", question = ques)

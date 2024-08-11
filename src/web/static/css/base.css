@@ -1,0 +1,309 @@
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+*{
+    font-family: "League Spartan", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, #d0e3f0 100%, #ffffff 100%);
+    margin: 0;
+}
+
+.logo{
+    padding: 5px 20px;
+
+}
+
+main{
+    text-align: center;
+    padding: 30px 0;
+    background: linear-gradient(to bottom, #d0e3f0 70%, #ffffff 100%);
+
+}
+
+.text p{
+    padding: 10px 0 50px;
+}
+
+.explore-form{
+    /* display: flex; */
+    /* justify-content: left; */
+    /* align-items: center; */
+    /* flex-direction: column; */
+    margin: 0 auto;
+    width: 40%;
+    height: auto;
+    text-align: left;
+}
+
+.question-card{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+
+label{
+    padding: 5px 0;
+}
+
+.question{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.custom-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.custom-checkbox {
+    /* display: inline-flex; */
+    /* align-items: center; */
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
+    position: relative;
+    padding-left: 30px;
+}
+
+
+.custom-checkbox .checkmark {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #d4d4d4; 
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.custom-checkbox:hover .checkmark {
+    background-color: #b5b5b5; 
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+    background-color: #4caf50;
+}
+
+.custom-checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark:after {
+    display: block;
+}
+
+.custom-checkbox .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.btn {
+    background-color: rgba(21, 196, 226, 1);; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    margin-left: 100px;
+}
+
+.btn:hover {
+    background-color: rgba(21, 196, 226, .6);; 
+}
+
+/* home */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-radius: 8px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+    margin: 10px 0;
+}
+
+.intro {
+    margin-bottom: 40px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.image {
+    flex: 1;
+    text-align: center;
+}
+
+.image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.intro p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.cta button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.cta button:hover {
+    background-color: #45a049;
+}
+
+
+
+footer {
+    background-color: transparent;
+    color: #000;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+    margin-bottom: 0;
+    position: static;
+}
+
+/* #answer */
+.container-hobby {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333333;
+}
+
+h3.related{
+    padding: 10px 0 20px;
+}
+
+.hobby-card {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.main-hobby {
+    font-size: 1.2em;
+    background-color: #e0f7fa;
+    border-color: #4dd0e1;
+    display: flex;
+    flex-direction: row;
+}
+
+.main-hobby-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.hobby-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.related-hobbies {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: #4dd0e1 #ffffff;
+}
+
+.related-hobbies::-webkit-scrollbar {
+    height: 10px;
+}
+
+.related-hobbies::-webkit-scrollbar-thumb {
+    background-color: #4CAF50;
+    border-radius: 10px;
+}
+
+.related-hobbies::-webkit-scrollbar-track {
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.related-hobbies .hobby-card {
+    flex: 0 0 calc(20% - 20px);
+    margin-bottom: 0;
+}
+
+.hobby-card h4 {
+    margin: 0;
+    color: #4682b4;
+}
+
+.hobby-card p {
+    margin: 10px 0 0 0;
+}
+
+@media (max-width: 800px) {
+    .related-hobbies .hobby-card {
+        flex: 0 0 calc(25% - 20px);
+    }
+}
+
+@media (max-width: 600px) {
+    .related-hobbies .hobby-card {
+        flex: 0 0 calc(33.33% - 20px);
+    }
+}
