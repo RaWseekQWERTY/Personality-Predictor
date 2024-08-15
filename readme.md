@@ -7,4 +7,4 @@
 ```console
 pip install requirements.txt
 ```
-#Set up yout gemini api key in .env by generating a api key through gemini docs
+# Set up yout gemini api key in .env by generating a api key through gemini docs
