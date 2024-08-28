@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    <h2>{% block title %}Personality Analysis{% endblock title %}</h2>
+{% endblock header %}
+
+{% block content %}
+<div class="container-personality">
+    <h1>MBTI Personality Analysis</h1>
+    
+    <div class="personality-card main-personality">
+        <div class="personality-content">
+            <h2>MBTI Type: {{ res['MBTI Type'] }}</h2>
+            <p><strong>Personality Description:</strong></p>
+            <p>{{ res['Personality Description'] | safe }}</p>
+            
+            {% if res['Handling Situations'] %}
+                <h3>How They Handle Situations:</h3>
+                <ul>
+                    {% for situation, description in res['Handling Situations'].items() %}
+                        <li><strong>{{ situation }}:</strong> {{ description }}</li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <p>No information available on how they handle situations.</p>
+            {% endif %}
+            
+            {% if res['Other Personality Traits'] %}
+                <h3>Other Personality Traits:</h3>
+                <ul>
+                    {% for trait, trait_desc in res['Other Personality Traits'].items() %}
+                        <li><strong>{{ trait }}:</strong> {{ trait_desc }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+            
+            {% if res['Examples of Situations and Handling Strategies'] %}
+                <h3>Examples of Situations and Handling Strategies:</h3>
+                <ul>
+                    {% for example, example_desc in res['Examples of Situations and Handling Strategies'].items() %}
+                        <li><strong>{{ example }}:</strong> {{ example_desc }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

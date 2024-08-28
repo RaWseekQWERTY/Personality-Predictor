@@ -10,7 +10,7 @@
     <div class="text">
         <p>**Let's find your Korean MBTI Personality!** Answer the following questions by **selecting all that apply** for each one to help us recommend something you'll enjoy:</p>
     </div>
-    <form method="post" action="" class="explore-form" onsubmit="return showInput()">
+    <form method="post" action="{{url_for('pages.personality')}}" class="explore-form" onsubmit="return showInput()">
         {% for question in question %}
         <div class="question-card">
             <p style="font-weight: 700" id="question-{{ loop.index }}" class="question">

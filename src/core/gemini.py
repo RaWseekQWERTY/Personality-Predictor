@@ -7,7 +7,7 @@ from src.core.prompts import questions, get_prompt
 def setup_gemini():
     load_dotenv()
 
-    GOOGLE_API_KEY = os.getenv('GOOGLE_API_KEY')
+    GOOGLE_API_KEY = os.getenv('GOOGLE_API')
     genai.configure(api_key=GOOGLE_API_KEY) 
     model = genai.GenerativeModel('gemini-pro')
 
